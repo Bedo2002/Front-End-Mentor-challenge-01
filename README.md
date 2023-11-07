@@ -89,3 +89,53 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
+
+
+
+create table lv( level int not null,Semster varchar(50) not null,Course_title varchar(50) not null,
+Course_type varchar not null,Crdhrs int null,
+Code varchar(50) not null,Preq varchar(50) not null);
+
+Insert into lv( level ,Semster ,Course_title ,Course_type ,Crdhrs,Code,Preq)
+values
+(1,'1_st','General Chemistry(1)','Obligatory',3,'CH1101','-------'),
+(1,'1_st','Mathematices(1)','Obligatory',3,'MA1101','-------'),
+(1,'1_st','Physics', 'Obligatory',3,'PH1121','-------'),
+(1,'1_st','Scientific English', 'Obligatory',2,'UN1101','-------'),
+(1,'1_st','General Physics','Optional',3,'PH1125','-------'),
+(1,'1_st','General Biology', 'Optional',3,'BIO1101','-------'),
+(1,'1_st','Mathematical statistics','Optional',3,'MA1103','-------'),
+(1,'1_st','Programming','Optional',3,'CS1101','-------'),
+(1,'1_st','تاريخ وفلسفة العلوم','Optional',1,'UN1103','-------'),
+(1,'1_st','مبادئ الإدارة والقيادة', 'Optional',1,'UN1105','-------'),
+(1,'1_st','الثقافة البيئية','Optional',1,'UN1107','-------'),
+(1,'2_st','General Chemistry(2)','Obligatory',3,'CH1202','CH1101'),
+(1,'2_st','Mathematices(2)','Obligatory',3,'MA1202','MA1101'),
+(1,'2_st','Physics(2)', 'Obligatory',3,'PH1222','PH1121'),
+(1,'2_st','اللغة العربية', 'Obligatory',2,'UN1202','-------'),
+(1,'2_st','Tutorial','Obligatory',3,'CH1204','CH1101'),
+(1,'2_st','Introduction to Biophysics', 'Obligatory',3,'PH1226','-------'),
+(1,'2_st','Applied Mathematics ','Optional',3,'MA1204','-------'),
+(1,'2_st','Algebra','Optional',3,'MA1206','-------'),
+(1,'2_st','التفكير النقدى','Optional',1,'UN1204','-------'),
+(1,'2_st','الثقافة الإسلامية', 'Optional',1,'UN1206','-------'),
+(1,'2_st','التعليم الذاتي','Optional',1,'UN1208','-------'),
+(2,'1_st','Computer Systems','Obligatory',3,'CS2101','-------'),
+(2,'1_st','Computer Programming','Obligatory',3,'CS2103','CS1101'),
+(2,'1_st','Abstract Algebra', 'Obligatory',3,'MA2103','MA2106'),
+(2,'1_st','Mathematical Analysis(1)', 'Obligatory',1,'MA2105','MA2102'),
+(2,'1_st','Transferable Skills','Obligatory',1,'TS2103','-------'),
+(2,'1_st','Discrete Mathematics', 'Optional',2,'MA2107','ST1206'),
+(2,'1_st','Mathematical methods','Optional',3,'MA2121','MA1101'),
+(2,'1_st','Probability Theory(1)','Optional',2,'ST2101','ST1101'),
+(2,'1_st','File Processing','Optional',3,'CS2105','CS1101'),
+(2,'2_st','Mathematical Analysis(2)','Obligatory',3,'MA2208','MA2105'),
+(2,'2_st','Linear Algebra & Solid Geometry', 'Obligatory',3,'MA2220','MA1202'),
+(2,'2_st','Digital Logic & Algorithms','Obligatory',3,'CS2202','CS2103'),
+(2,'2_st','Data Structure & Algorithms','Obligatory',3,'CS2204','CS2103'),
+(2,'2_st','Number Theory','Optional',3,'MA2212','MA1206'),
+(2,'2_st','Data Basic systems','Optional',3,'CS2206','CS2103'),
+(2,'2_st','Object Oriented Programming', 'Optional',3,'CS2208','CS2103'),
+(2,'2_st','Statical Inference(1)','Optional',3,'ST2206','ST2101')
+SELECT*FROM lv
